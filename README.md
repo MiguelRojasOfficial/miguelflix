@@ -22,7 +22,7 @@ public/ - Imágenes y recursos estáticos
 
 ## Instalación
 
-1. Clonar el repositorio: git clone https://github.com/tuusuario/miguelflix.git cd miguelflix  
+1. Clonar el repositorio: git clone https://github.com/MiguelRojasOfficial/miguelflix.git cd miguelflix  
 2. Instalar dependencias: npm install  
 3. Configurar variables de entorno en .env.local: NEXT_PUBLIC_CONTENTFUL_SPACE_ID=tu_space_id NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN=tu_access_token RESEND_API_KEY=tu_resend_api_key CONTACT_RECEIVER_EMAIL=miguelrojasy3@gmail.com  
 4. Ejecutar en desarrollo: npm run dev  
