@@ -11,11 +11,11 @@ export async function generateStaticParams() {
 }
 
 interface PageProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
-export default async function ContentPage(props: PageProps) {
-  const { slug } = props.params;
+export default async function ContentPage({ params }: PageProps) {
+  const { slug } = await params; // 👈 importante: usar await aquí
 
   const res = await client.getEntries({
     content_type: "catalog",
