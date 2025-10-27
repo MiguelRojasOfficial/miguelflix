@@ -10,7 +10,7 @@ export async function generateStaticParams() {
 }
 
 export default async function ContentPage({ params }: { params: { slug: string } }) {
-  const { slug } = params
+  const { slug } = params;
   const res = await client.getEntries({
     content_type: "catalog",
     "fields.slug": slug,
