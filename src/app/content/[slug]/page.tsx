@@ -4,7 +4,7 @@ import { getCatalog, client } from "@/lib/getCatalog";
 import { notFound } from "next/navigation";
 
 type PageProps = {
-  params: Promise<{ slug: string }>
+  params: { slug: string };
 };
 
 export async function generateStaticParams() {
@@ -13,7 +13,8 @@ export async function generateStaticParams() {
 }
 
 export default async function ContentPage({ params }: PageProps) {
-  const { slug } = await params; // 👈 OJO: ahora hay que hacer await aquí
+  const { slug } = params; // ✅ sin await
+
   const res = await client.getEntries({
     content_type: "catalog",
     "fields.slug": slug,
