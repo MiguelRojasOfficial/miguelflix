@@ -9,7 +9,14 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function ContentPage({ params }: { params: { slug: string } }) {
+
+interface ContentPageProps {
+  params: {
+    slug: string;
+  };
+}
+
+export default async function ContentPage({ params }: ContentPageProps) {
   const { slug } = params;
   const res = await client.getEntries({
     content_type: "catalog",
