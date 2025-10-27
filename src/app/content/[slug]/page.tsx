@@ -10,12 +10,14 @@ export async function generateStaticParams() {
   }));
 }
 
-interface PageProps {
-  params: Promise<{ slug: string }>;
-}
+type Params = {
+  slug: string;
+};
 
-export default async function ContentPage({ params }: PageProps) {
-  const { slug } = await params; // 👈 importante: usar await aquí
+export default async function ContentPage({ params }: { params: Params }) {
+  const slug = params?.slug;
+
+  if (!slug) return notFound();
 
   const res = await client.getEntries({
     content_type: "catalog",
