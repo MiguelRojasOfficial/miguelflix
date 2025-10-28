@@ -2,6 +2,10 @@ import ContentDetail from "@/app/content/[slug]/ContentDetail";
 import { getCatalog, client } from "@/lib/getCatalog";
 import { notFound } from "next/navigation";
 
+interface ContentPageProps {
+  params: { slug: string }
+}
+
 export async function generateStaticParams() {
   const catalog = await getCatalog();
   return catalog.map((item) => ({
@@ -9,7 +13,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function ContentPage({ params }: { params: { slug: string } }) {
+export default async function ContentPage({ params }: ContentPageProps) {
   const { slug } = params;
   const res = await client.getEntries({
     content_type: "catalog",
