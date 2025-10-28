@@ -9,13 +9,8 @@ export async function generateStaticParams() {
   }));
 }
 
-interface Params {
-  params: { slug: string };
-}
-
-export default async function ContentPage({ params }: Params) {
+export default async function ContentPage({ params }: { params: { slug: string } }) {
   const { slug } = params;
-
   const res = await client.getEntries({
     content_type: "catalog",
     "fields.slug": slug,
