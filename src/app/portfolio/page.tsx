@@ -92,7 +92,7 @@ export default function PortfolioPage() {
                 <h3 className="text-xl font-semibold mb-2">Migueltify</h3>
                 <p className="text-sm text-gray-300 mb-4">Next + React + Typescript + Tailwind + CSS + API de Deezer + Multilenguaje</p>
                 <a
-                  href="https://tu-proyecto-en-vercel.vercel.app"
+                  href="https://migueltify.onrender.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-red-500 hover:underline"
@@ -112,7 +112,7 @@ export default function PortfolioPage() {
               <h3 className="text-xl font-semibold mb-2">Miguel TV</h3>
               <p className="text-sm text-gray-300 mb-4">Next + React + Typescript + Tailwind + CSS + API de TMDb</p>
               <a
-                href="https://tu-proyecto-en-vercel.vercel.app"
+                href="https://migueltv.onrender.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-red-500 hover:underline"
@@ -132,7 +132,7 @@ export default function PortfolioPage() {
               <h3 className="text-xl font-semibold mb-2">MiguelStore</h3>
               <p className="text-sm text-gray-300 mb-4">Next + React + Typescript + Tailwind + CSS</p>
               <a
-                href="https://netflix-clon.vercel.app"
+                href="https://miguelstore.onrender.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-red-500 hover:underline"
@@ -152,7 +152,7 @@ export default function PortfolioPage() {
               <h3 className="text-xl font-semibold mb-2">Miguel CRM</h3>
               <p className="text-sm text-gray-300 mb-4">Next + React + Typescript + Tailwind + CSS</p>
               <a
-                href="https://netflix-clon.vercel.app"
+                href="https://miguelcrm.onrender.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-red-500 hover:underline"
